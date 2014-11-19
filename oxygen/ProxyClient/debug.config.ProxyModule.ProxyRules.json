@@ -1,0 +1,66 @@
+{
+	"Map":	{
+
+	"bower_components":	{
+			"Description":	null,
+			"From":	{
+				"HostName":	"localhost",
+				"Match":	"/bower_components",
+				"Port":	56051,
+				"Scheme":	"http"
+			},
+			"To":	{
+				"HostName":	"localhost",
+				"Match":	"/content/ui",
+				"Port":	56226,
+				"Scheme":	"http"
+			}
+		},	
+		"api":	{
+			"Description":	null,
+			"From":	{
+				"HostName":	"localhost",
+				"Match":	"/api",
+				"Port":	56051,
+				"Scheme":	"http"
+			},
+			"To":	{
+				"HostName":	"localhost",
+				"Match":	"",
+				"Port":	49699,
+				"Scheme":	"http"
+			}
+		},
+	    "live":	{
+			"Description":	null,
+			"From":	{
+				"HostName":	"localhost",
+				"Match":	"/",
+				"Port":	56051,
+				"Scheme":	"http"
+			},
+			"To":	{
+				"HostName":	"localhost",
+				"Match":	"/content/live",
+				"Port":	56226,
+				"Scheme":	"http"
+			}
+		},
+	    "localhost":	{
+			"Description":	null,
+			"From":	{
+				"HostName":	"localhost",
+				"Match":	"/",
+				"Port":	56051,
+				"Scheme":	"http"
+			},
+			"To":	{
+				"HostName":	"localhost",
+				"Match":	"/content/ui/app",
+				"Port":	56226,
+				"Scheme":	"http"
+			}
+		}
+		
+	}
+}

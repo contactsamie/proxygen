@@ -1,0 +1,14 @@
+[
+	{
+		"BaseDir":	"C:\\Users\\dom\\Documents\\GitHub\\AuthModuleTemplate\\authModule\\ProxyClient\\",
+		"FileName":	"debug.config.ProxyModule.ProxyRules.json",
+		"IsActive":	true,
+		"Selector":	"debug"
+	},
+	{
+		"BaseDir":	"C:\\Users\\dom\\Documents\\GitHub\\AuthModuleTemplate\\authModule\\ProxyClient\\",
+		"FileName":	"release.config.ProxyModule.ProxyRules.json",
+		"IsActive":	false,
+		"Selector":	"release"
+	}
+]
