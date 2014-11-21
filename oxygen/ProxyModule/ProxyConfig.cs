@@ -1,6 +1,6 @@
 using ConfigJsonNET;
 
-namespace ProxyModule
+namespace Proxygen
 {
     public class ProxyConfig : ConfigJson<ProxyRules>
     {

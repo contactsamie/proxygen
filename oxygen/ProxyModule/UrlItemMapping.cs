@@ -1,9 +1,9 @@
-namespace ProxyModule
+namespace Proxygen
 {
     public class UrlItemMapping
     {
         public string Description { set; get; }
-        public UrlItem From { set; get; }
-        public UrlItem To { set; get; }
+        public UrlItemFrom From { set; get; }
+        public UrlItemTo To { set; get; }
     }
 }

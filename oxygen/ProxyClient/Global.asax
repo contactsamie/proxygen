@@ -1,1 +1,1 @@
-﻿<%@ Application  Inherits="ProxyModule.ProxyApplication" Language="C#" %>
+﻿<%@ Application  Inherits="Proxygen.ProxyApplication" Language="C#" %>

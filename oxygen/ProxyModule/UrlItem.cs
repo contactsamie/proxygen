@@ -1,13 +1,21 @@
-namespace ProxyModule
+using System;
+using System.Collections.Generic;
+
+namespace Proxygen
 {
     public class UrlItem
     {
         public UrlItem()
         {
+            Messages = new List<string>();
         }
 
-        public UrlItem(string pathAndQueryPrefix = "/", string hostName = "localhost", int port = 80,
-            string scheme = "http")
+        /// <summary>
+        /// for diagnostics
+        /// </summary>
+        public List<string> Messages { set; get; }
+
+        public UrlItem(string pathAndQueryPrefix = "/", string hostName = "localhost", int port = 80,string scheme = "http")
         {
             HostName = hostName;
             Match = pathAndQueryPrefix;
@@ -19,8 +27,13 @@ namespace ProxyModule
 
         public string Match { set; get; }
 
-        public int Port { set; get; }
+        public int? Port { set; get; }
 
         public string Scheme { set; get; }
+
+        /// <summary>
+        /// for diagnostics
+        /// </summary>
+        public DateTime? Time { set; get; }
     }
 }

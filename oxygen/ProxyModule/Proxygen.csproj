@@ -7,8 +7,8 @@
     <ProjectGuid>{74C6523F-B88C-4D5D-87DD-E0AE8023F964}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProxyModule</RootNamespace>
-    <AssemblyName>ProxyModule</AssemblyName>
+    <RootNamespace>Proxygen</RootNamespace>
+    <AssemblyName>Proxygen</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,13 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="JsonContent.cs" />
     <Compile Include="ProxyConfig.cs" />
     <Compile Include="ProxyRules.cs" />
     <Compile Include="UrlItem.cs" />
+    <Compile Include="UrlItemFrom.cs" />
     <Compile Include="UrlItemMapping.cs" />
     <Compile Include="ProxyApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProxyHandler.cs" />
+    <Compile Include="UrlItemTo.cs" />
     <Compile Include="WebApiConfig.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,10 +59,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SampleConfigurations\app.config.ProxyModule.ProxyRules.json" />
-    <Content Include="SampleConfigurations\debug.config.ProxyModule.ProxyRules.json" />
     <None Include="packages.config" />
     <Content Include="SampleConfigurations\packages.config" />
+    <Content Include="SampleConfigurations\app.config.Proxygen.ProxyRules.json" />
+    <Content Include="SampleConfigurations\debug.config.Proxygen.ProxyRules.json" />
     <None Include="SampleConfigurations\sample.packages.config" />
     <Content Include="SampleConfigurations\Web.config" />
   </ItemGroup>

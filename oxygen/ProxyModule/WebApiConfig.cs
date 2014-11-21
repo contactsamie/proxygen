@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Web.Http;
 
-namespace ProxyModule
+namespace Proxygen
 {
     public static class WebApiConfig
     {
@@ -12,11 +12,10 @@ namespace ProxyModule
             // Web API routes
             //config.MapHttpAttributeRoutes();
 
-
             config.Routes.MapHttpRoute("Proxy", "{*path}",
                 handler: HttpClientFactory.CreatePipeline(new HttpClientHandler(),
-                    // will never get here if proxy is doing its job
-                    new DelegatingHandler[] {new ProxyHandler()}),
+                // will never get here if proxy is doing its job
+                    new DelegatingHandler[] { new ProxyHandler() }),
                 defaults: new
                 {
                     path = RouteParameter.Optional

@@ -78,19 +78,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProxyModule\ProxyModule.csproj">
+    <ProjectReference Include="..\ProxyModule\Proxygen.csproj">
       <Project>{74C6523F-B88C-4D5D-87DD-E0AE8023F964}</Project>
-      <Name>ProxyModule</Name>
+      <Name>Proxygen</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="debug.config.ProxyModule.ProxyRules.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="app.config.ProxyModule.ProxyRules.json" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config.Proxygen.ProxyRules.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="debug.config.Proxygen.ProxyRules.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

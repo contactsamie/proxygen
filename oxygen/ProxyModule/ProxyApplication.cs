@@ -1,6 +1,6 @@
 using System.Web.Http;
 
-namespace ProxyModule
+namespace Proxygen
 {
     public class ProxyApplication : System.Web.HttpApplication
     {
